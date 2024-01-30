@@ -1,4 +1,5 @@
-/* arts farts */
+/* Styling/Positioning  */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -9,18 +10,52 @@ body {
 
 h1 {
     color: #007bff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;
+    margin-left: 1in;
+    /* idky h1 isn't moving down with margin-top */
+    margin-top: 1in;
+    padding: 0;
+    max-width: fit-content;
+}
+
+#button {
+    margin-top: 1in;
+    margin-left: 1in;
+}
+
+#button2 {
+    margin-top: 0.5in;
+    margin-left: 1in;
+}
+
+#name-menu + .dropdown-menu { 
+    position: static;
+    left: 100px;
+    top: 150px;
+    /* for relative positioning use z-index: <num> */ 
 }
 
 
-#tooltip {
+
+
+/* INCASE WE WANT TO CHANGE TOOLTIP COLOR::
+    - need to override bootstraps default tooltip CSS:
+        .tooltip.bs-tooltip-bottom,
+        .tooltip.bs-tooltip-top,
+        .tooltip.bs-tooltip-start,
+        .tooltip.bs-tooltip-end {
+        border: none !important;
+
+    - then adjust tooltip class below
+.tooltip {
     width: max-content;
-    position: absolute;
-    top: 0;
-    left: 0;
     background: #222;
     color: white;
     font-weight: bold;
     padding: 5px;
     border-radius: 4px;
     font-size: 90%;
-  }
+    border-width: 2px;
+  } */
+

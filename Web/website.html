@@ -14,19 +14,34 @@
 
 </head>
 <body>
-    <h1>TX 2 DX MATCHMAKER </h1>
-    <button id="button" aria-describedby="tooltip">
+    <h1 data-bs-toggle="tooltip" title="Machine Learning Insights into Treatment and Diagnosis">TX 2 DX MATCHMAKER </h1>
+    <button id="button" data-bs-toggle="tooltip" title="BOO!">
       Hover for surprise</button>
-    <div class="tooltip" role="tooltip">testing</div>
+    <!-- if we are not changing tooltip style, we can remove div class="tooltip" -->
+      <div class="tooltip" role="tooltip"></div>
 
+    <button id="button2" data-bs-toggle="tooltip" title="mama">joe</button>
+    <div class="tooltip" role="tooltip"></div>
 
-  <!-- jQuery -->
+    <div class="container mt-5"></div>
+    <button id="name-menu" class="btn btn-primary" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Select a Name</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Yasmin</a></li>
+        <li><a class="dropdown-item" href="#">Merve</a></li>
+        <li><a class="dropdown-item" href="#">Allan</a></li>
+        <li><a class="dropdown-item" href="#">Qudsia</a></li>
+      </ul>
+      
+
+  <!-- jQuery framework-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <!-- Popper.JS/Floating UI-->
+  <!-- Popper.JS/Floating UI framework-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" crossorigin="anonymous"></script>
-  <!-- BootStrap JS-->
+  <!-- BootStrap JS framework -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+  <!-- local bootstrap.js file-->
+  <script src="bootstrap.js"></script>
 </body>
 
 
