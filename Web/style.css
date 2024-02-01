@@ -7,6 +7,13 @@ body {
     padding: 0;
 }
 
+.pill-icon { 
+    position: absolute;
+    left: 0; 
+    margin-left: 272px;
+    margin-top: -18px;
+}
+
 h1 {
     text-align: center;
     position: absolute;
@@ -14,7 +21,7 @@ h1 {
     left: 50%; /* Centered horizontally */
     transform: translateX(-50%);
     color: #052a8f !important;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Geologica', sans-serif;
     background-color: transparent;
     padding: 0;
     text-transform: capitalize;
@@ -54,6 +61,8 @@ h1 {
     width: 300px;
     top: 10%;
     right: 5%;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500
 }
 
 .content-wrapper-accuracy {
@@ -62,6 +71,8 @@ h1 {
     width: 300px;
     top: 50%;
     right: 5%;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500
 }
 
 .about_text {
@@ -70,7 +81,7 @@ h1 {
     right: 5%;
     bottom: 20%;
     width: 300px; /* Width of the box on the right */
-    background-color: #f1a13f; /* Background color of the box */
+    background-color: #7497ea; /* Background color of the box */
     padding: 20px; /* Padding inside the box */
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.36); /* Box shadow for a subtle effect */
 }
@@ -81,10 +92,11 @@ h1 {
     right: 5%;
     bottom: 20%;
     width: 300px; /* Width of the box on the right */
-    background-color: #f1a13f; /* Background color of the box */
+    background-color: #ec6359; /* Background color of the box */
     padding: 20px; /* Padding inside the box */
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.36); /* Box shadow for a subtle effect */
 }
+
 
 
 /* INCASE WE WANT TO CHANGE TOOLTIP COLOR::
