@@ -1,0 +1,121 @@
+/* Styling/Positioning  */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.pill-icon { 
+    position: absolute;
+    left: 0; 
+    margin-left: 405px;
+    margin-top: -18px;
+}
+
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 5%; 
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%);
+    color: #052a8f !important;
+    font-family:'Geologica', sans-serif;
+    background-color: transparent;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+#button1 {
+    position: absolute;
+    top: 20%; /* Adjust this value for vertical positioning */
+    left: 10%; /* Adjust this value for horizontal positioning */
+    transform: translateY(-50%);
+}
+
+#button2 {
+    position: absolute;
+    top: 25%; /* Adjust this value for vertical positioning */
+    left: 10%; /* Adjust this value for horizontal positioning */
+    transform: translateY(-50%);
+}
+
+#name-menu1 { 
+    position: absolute;
+    top: 40%; /* Adjust this value for vertical positioning */
+    left: 10%; /* Adjust this value for horizontal positioning */
+    transform: translateY(-50%); 
+}
+
+#name-menu2 { 
+    position: absolute;
+    top: 40%; /* Adjust this value for vertical positioning */
+    left: 30%; /* Adjust this value for horizontal positioning */
+    transform: translateY(-50%); 
+}
+
+.content-wrapper-about {
+    position: absolute; /* Relative positioning for absolute positioning inside */
+    height: 50vh; /* Full height of the viewport */
+    width: 300px;
+    top: 10%;
+    right: 5%;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500
+}
+
+.content-wrapper-accuracy {
+    position: absolute; /* Relative positioning for absolute positioning inside */
+    height: 50vh; /* Full height of the viewport */
+    width: 300px;
+    top: 50%;
+    right: 5%;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500
+}
+
+.about_text {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    bottom: 20%;
+    width: 300px; /* Width of the box on the right */
+    background-color: #7497ea; /* Background color of the box */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.36); /* Box shadow for a subtle effect */
+}
+
+.model_accuracy_text {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 20%;
+    width: 300px; /* Width of the box on the right */
+    background-color: #ec6359; /* Background color of the box */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.36); /* Box shadow for a subtle effect */
+}
+
+
+
+/* INCASE WE WANT TO CHANGE TOOLTIP COLOR::
+    - need to override bootstraps default tooltip CSS:
+        .tooltip.bs-tooltip-bottom,
+        .tooltip.bs-tooltip-top,
+        .tooltip.bs-tooltip-start,
+        .tooltip.bs-tooltip-end {
+        border: none !important;
+
+    - then adjust tooltip class below
+.tooltip {
+    width: max-content;
+    background: #222;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 90%;
+    border-width: 2px;
+  } */
+
