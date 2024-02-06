@@ -27,33 +27,33 @@ h1 {
     text-transform: capitalize;
 }
 
-#button1 {
+/* #button1 {
     position: absolute;
-    top: 20%; /* Adjust this value for vertical positioning */
-    left: 10%; /* Adjust this value for horizontal positioning */
+    top: 20%; 
+    left: 10%; 
     transform: translateY(-50%);
 }
 
 #button2 {
     position: absolute;
-    top: 25%; /* Adjust this value for vertical positioning */
-    left: 10%; /* Adjust this value for horizontal positioning */
+    top: 25%; 
+    left: 10%; 
     transform: translateY(-50%);
 }
 
 #name-menu1 { 
     position: absolute;
-    top: 40%; /* Adjust this value for vertical positioning */
-    left: 10%; /* Adjust this value for horizontal positioning */
+    top: 40%; 
+    left: 10%; 
     transform: translateY(-50%); 
 }
 
 #name-menu2 { 
     position: absolute;
-    top: 40%; /* Adjust this value for vertical positioning */
-    left: 30%; /* Adjust this value for horizontal positioning */
+    top: 40%; 
+    left: 30%; 
     transform: translateY(-50%); 
-}
+} */
 
 .content-wrapper-about {
     position: absolute; /* Relative positioning for absolute positioning inside */
