@@ -21,3 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   });
   
+function nextPage(){
+  window.location.href = 'next-page.html';
+  // if path doesn't work TRY: 'templates/next-page.html'
+
+}
+
+if 

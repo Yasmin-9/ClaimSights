@@ -20,55 +20,132 @@
   
   
   <img class="pill-icon" src="static/pill.png" alt="blue-red-pill" width="64" height="64">
-  <title>Tx 2 Dx MATCHMAKER</title>
+  <title>ClaimSights</title>
   
 
 
 </head>
 <body>
   
-  <h1 data-bs-toggle="tooltip" title="Machine Learning Insights into Treatment and Diagnosis">Tx 2 Dx MATCHMAKER </h1>
-  <button id="button1" data-bs-toggle="tooltip" title="BOO!">button1</button>
-    <div class="tooltip" role="tooltip"></div>
-
-  <button id="button2" data-bs-toggle="tooltip" title="mama">button2</button>
-  <div class="tooltip" role="tooltip"></div>
-
-  <div class="container mt-5 dropdown">
-  <button id="name-menu1" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Drop Down 1</button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Yasmin1</a></li>
-      <li><a class="dropdown-item" href="#">Merve1</a></li>
-      <li><a class="dropdown-item" href="#">Allan1</a></li>
-      <li><a class="dropdown-item" href="#">Qudsia1</a></li>
-    </ul>
+  <div class="slogan">
+  <h1 data-bs-toggle="tooltip" title="Machine Learning Foresights into Health Insurance Claims"><b><em>ClaimSights</em></b></h1>
+  <h5 class="description"><em>Machine Learning Foresights into Health Insurance Claims</em></h5>
   </div>
-  
-  <button id="name-menu2" class="btn btn-primary" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Drop Down 2</button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Yasmin2</a></li>
-      <li><a class="dropdown-item" href="#">Merve2</a></li>
-      <li><a class="dropdown-item" href="#">Allan2</a></li>
-      <li><a class="dropdown-item" href="#">Qudsia2</a></li>
-    </ul>
-  
-  
+ 
   <div class="content-wrapper-about">
     
     <div class="about_text">
-      <div>About</div>
+      <div><b>About</b><br>
+        <br>
+        This site features a model that predicts
+        wether your insurance claim would be
+        accepted or rejected, based on your Sex, 
+        Age group and diagnosis type!
+
+      </div>
     </div>
   </div>
 
   <div class="content-wrapper-accuracy">
     
     <div class="model_accuracy_text">
-      <div>Model Accuracy</div>
+      <div><b><em>"I don't know my diagnosis code"</em></b><br>
+        <br>
+        Not sure of which listed code
+        matches your diagnosis type? 
+        Click below to view a list of the diagnosis 
+        code's and their descriptions.
+        <br>
+        <br>
+        <button id="next-page-button" data-bs-toggle="tooltip" title="Click me!" onclick="nextPage()">View List</button>
+        <div class="tooltip" role="tooltip"></div>
+
+
+      </div>
     </div>
   </div>
 
+    <div class="calculator-wrapper">
+      <div class="calculator-text">
+        <div style="text-align: center;">
+          <b>TRY NOW</b>
+          <br>
+          <br>
+          Fill in your general information below by selecting the corresponding options, 
+          and instantly find out if your insurance claim would likely be paid ('COVERED') 
+          or not ('REJECTED')
+          <div class="container mt-5 dropdown">
+          <button id="age-menu" class="btn btn-primary" type="button" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-toggle="tooltip" title="Select your Age Range"
+          aria-expanded="false">Age</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">0-15</a></li>
+      <li><a class="dropdown-item" href="#">16-25</a></li>
+      <li><a class="dropdown-item" href="#">26-45</a></li>
+      <li><a class="dropdown-item" href="#">46-65</a></li>
+      <li><a class="dropdown-item" href="#">66+</a></li>
+    </ul>
+          </div>
+        </div>
+        <div class="container mt-5 dropdown">
+          <button id="sex-menu" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-toggle="tooltip" title="Select your Sex"
+                  aria-expanded="false">Sex</button>
+                  
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Female</a></li>
+              <li><a class="dropdown-item" href="#">Male</a></li>
+            </ul>
+        </div>
+        <div class="container mt-5 dropdown">
+          <button id="diag-code-menu" 
+          class="btn btn-primary dropdown-toggle" 
+          type="button" data-bs-toggle="dropdown" 
+          aria-haspopup="true" data-bs-toggle="tooltip" 
+          style="margin-left:220px; margin-top: -25px;" 
+          title="Select your matching Diagnosis Code"
+          aria-expanded="false">Diagnosis Code</button>
+          
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">A</a></li>
+                <li><a class="dropdown-item" href="#">B</a></li>
+                <li><a class="dropdown-item" href="#">C</a></li>
+                <li><a class="dropdown-item" href="#">D</a></li>
+                <li><a class="dropdown-item" href="#">E</a></li>
+                <li><a class="dropdown-item" href="#">F</a></li>
+                <li><a class="dropdown-item" href="#">G</a></li>
+                <li><a class="dropdown-item" href="#">H</a></li>
+                <li><a class="dropdown-item" href="#">I</a></li>
+                <li><a class="dropdown-item" href="#">J</a></li>
+                <li><a class="dropdown-item" href="#">K</a></li>
+                <li><a class="dropdown-item" href="#">L</a></li>
+                <li><a class="dropdown-item" href="#">M</a></li>
+                <li><a class="dropdown-item" href="#">N</a></li>
+                <li><a class="dropdown-item" href="#">O</a></li>
+                <li><a class="dropdown-item" href="#">P</a></li>
+                <li><a class="dropdown-item" href="#">Q</a></li>
+                <li><a class="dropdown-item" href="#">R</a></li>
+                <li><a class="dropdown-item" href="#">S</a></li>
+                <li><a class="dropdown-item" href="#">T</a></li>
+                <li><a class="dropdown-item" href="#">U</a></li>
+                <li><a class="dropdown-item" href="#">V</a></li>
+                <li><a class="dropdown-item" href="#">Z</a></li>
+
+
+            </ul>
+
+        </div>
+          <br>
+          <br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Get Results</button>
+          </div>
+<br>
+<br>
+<br>
+          <button type="button" class="btn btn-secondary result" style="margin-left:200px;">...</button>
+
+      </div>
+   
+    </div>
 
 
   <!-- jQuery framework-->
@@ -78,7 +155,7 @@
   <!-- BootStrap JS framework -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <!-- local bootstrap.js file-->
-  <script src="bootstrap.js"></script>
+  <script src="static/bootstrap.js"></script>
 </body>
 
 
