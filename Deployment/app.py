@@ -11,6 +11,11 @@ def create_app():
   @app.route('/')
   def index(): 
         return render_template('website.html')
+  
+  @app.route('/diagnosis-page')
+  def diagnosis_page():
+        return render_template('next-page.html')
+  
 
   if __name__ == '__main__':
     app.run(debug=True)
@@ -18,6 +23,5 @@ def create_app():
   return app
 
 create_app()
-
 
 
