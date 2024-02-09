@@ -12,9 +12,9 @@ def create_app():
   def index(): 
         return render_template('website.html')
   
-  @app.route('/diagnosis-page')
+  @app.route('/diagnosis-page.html')
   def diagnosis_page():
-        return render_template('next-page.html')
+        return render_template('next_page.html')
   
 
   if __name__ == '__main__':
