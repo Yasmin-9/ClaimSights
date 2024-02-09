@@ -14,7 +14,7 @@ body {
     margin-top: -18px;
 } */
 
-h1 {
+.slogan {
     text-align: center;
     position: absolute;
     top: 5%; 
@@ -33,7 +33,7 @@ h3 {
     position: absolute;
     top: 50%; 
     left: 50%;
-    transform: translateX(-50%,-50%)
+    transform: translateX(-50%,-50%);
     color: #052a8f !important;
     font-family:'Geologica', sans-serif;
     background-color: transparent;
@@ -42,19 +42,7 @@ h3 {
 
 }
 
- /* #button1 {
-    position: absolute;
-    top: 20%; 
-    left: 10%; 
-    transform: translateY(-50%);
-} */
-/* 
-#button2 {
-    position: absolute;
-    top: 25%; 
-    left: 10%; 
-    transform: translateY(-50%);
-} */
+
 
 #sex-menu { 
     position: absolute;
@@ -74,7 +62,7 @@ h3 {
     position: absolute; 
     height: 50vh; 
     width: 300px;
-    top: 10%;
+    top: 15%;
     right: 5%;
     font-family: 'Geologica', sans-serif;
     font-weight: 500
@@ -84,7 +72,7 @@ h3 {
     position: absolute; 
     height: 50vh; 
     width: 300px;
-    top: 50%;
+    top: 55%;
     right: 5%;
     font-family: 'Geologica', sans-serif;
     font-weight: 500
@@ -126,26 +114,54 @@ h3 {
     border-color: #052a8f;
 }
 
+  table {
+    margin: 100px auto 0;
+    border-collapse: collapse;
+    width: calc(100% - 200px);
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align:left;
+  }
+  
+  th {
+    background-color: #ec6359;
+  }
 
-/* INCASE WE WANT TO CHANGE TOOLTIP COLOR::
-    - need to override bootstraps default tooltip CSS:
-        .tooltip.bs-tooltip-bottom,
-        .tooltip.bs-tooltip-top,
-        .tooltip.bs-tooltip-start,
-        .tooltip.bs-tooltip-end {
-        border: none !important;
+  td {
+    background-color: #7497ea;
+  }
+  
 
-    - then adjust tooltip class below
-.tooltip {
-    width: max-content;
-    background: #222;
-    color: white;
-    font-weight: bold;
-    padding: 5px;
+  .search-container {
+    margin: 50px 0;
+  }
+  
+  /* Styles for search input */
+  input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 90%;
-    border-width: 2px;
-  } */
+  }
+  
+/* Styles for home page button */
+.button-return {
+    position: absolute;
+    top: 5%;
+    right: 7.5%;
+    width: 20px; 
+    text-wrap: nowrap;
+    padding: 10px 60px;
+    background-color: #7497ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
 
   table {
     margin: 100px auto 0;
