@@ -17,16 +17,643 @@
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@900&display=swap" rel="static/stylesheet">
   <!-- Favicon image-->
   <link rel="icon" type="image/png" sizes="32x32" href="static/pill_ideal.png">
-  
   <title>Diagnosis Code List</title>
 
 </head>
 
-<h1> Diagnosis Code's</h1>
-
 <body>
 
+  <div class="header">
+    <h1> Diagnosis Code's</h1>
+    <button class="button-return" onclick="homePage()">Home Page</button>
+  </div>
 
+  <div class="search-container">
+    <label for="search">Search Description:</label>
+    <input type="text" id="search" name="search" onkeyup="searchFunction()" placeholder="Enter keyword...">
+  </div>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Description</th>
+    </tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A0</td>
+        <td>Infectious disease (specifically for gastrointestinal system)</td>
+      </tr>
+      <tr>
+        <td>A1</td>
+        <td>Tuberculous meningitis</td>
+      </tr>
+      <tr>
+        <td>A4</td>
+        <td>Sepsis (Bacterial infections)</td>
+      </tr>
+      <tr>
+        <td>A5</td>
+        <td>Sexually Transmitted Infections (STIs)</td>
+      </tr>
+      <tr>
+        <td>A8</td>
+        <td>Vitiligo</td>
+      </tr>
+      <tr>
+        <td>A9</td>
+        <td>Dengue Fever</td>
+      </tr>
+      <tr>
+        <td>B0</td>
+        <td>Viral Infections (including Varicella, Herpes, and Measles)</td>
+      </tr>
+      <tr>
+        <td>B2</td>
+        <td>Mononucleosis and Mumps</td>
+      </tr>
+      <tr>
+        <td>B3</td>
+        <td>Viral AND fungal infections</td>
+      </tr>
+      <tr>
+        <td>B4</td>
+        <td>Phaeomycotic Abscess and Cyst</td>
+      </tr>
+      <tr>
+        <td>B5</td>
+        <td>Malaria</td>
+      </tr>
+      <tr>
+        <td>B6</td>
+        <td>Echinococcosis</td>
+      </tr>
+      <tr>
+        <td>B9</td>
+        <td>Infectious Diseases caused by Specific Bacteria</td>
+      </tr>
+      <tr>
+        <td>C0</td>
+        <td>Malignant Neoplasm of Mouth</td>
+      </tr>
+      <tr>
+        <td>C1</td>
+        <td>Malignant Neoplasms of Digestive Organs</td>
+      </tr>
+      <tr>
+        <td>C4</td>
+        <td>Skin Carcinomas</td>
+      </tr>
+      <tr>
+        <td>C5</td>
+        <td>Malignant Neoplasms of Female Reproductive Organs and Breast</td>
+      </tr>
+      <tr>
+        <td>C6</td>
+        <td>Malignant Neoplasms of Urinary Organs</td>
+      </tr>
+      <tr>
+        <td>C7</td>
+        <td>Malignant Neoplasms of Endocrine Glands and Other Sites</td>
+      </tr>
+      <tr>
+        <td>C8</td>
+        <td>Lymphomas</td>
+      </tr>
+      <tr>
+        <td>D0</td>
+        <td>In Situ Neoplasms</td>
+      </tr>
+      <tr>
+        <td>D1</td>
+        <td>Benign Neoplasms of Various Sites</td>
+      </tr>
+      <tr>
+        <td>D2</td>
+        <td>Benign Neoplasms of Reproductive Organs and Other Sites</td>
+      </tr>
+      <tr>
+        <td>D3</td>
+        <td>Neoplasms of Uncertain Behavior and Benign Neoplasms of Endocrine Glands</td>
+      </tr>
+      <tr>
+        <td>D4</td>
+        <td>Neoplasms of Unspecified or Uncertain Behavior (various body systems)</td>
+      </tr>
+      <tr>
+        <td>D5</td>
+        <td>Specific Types of Anemia</td>
+      </tr>
+      <tr>
+        <td>D6</td>
+        <td>Unspecified Anemia and Other Blood Disorders</td>
+      </tr>
+      <tr>
+        <td>D7</td>
+        <td>Elevated White Blood Cell Count</td>
+      </tr>
+      <tr>
+        <td>E0</td>
+        <td>Thyroid Disorders</td>
+      </tr>
+      <tr>
+        <td>E1</td>
+        <td>Diabetes Mellitus and Related Conditions.</td>
+      </tr>
+      <tr>
+        <td>E2</td>
+        <td>Various Endocrine and Reproductive Disorders</td>
+      </tr>
+      <tr>
+        <td>E5</td>
+        <td>Vitamin Deficiencies (D + B + Other)</td>
+      </tr>
+      <tr>
+        <td>E6</td>
+        <td>Iron and Vitamin C Deficiencies</td>
+      </tr>
+      <tr>
+        <td>E7</td>
+        <td>Hyperlipidemia and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>E8</td>
+        <td>Metabolic Disorders and Electrolyte Imbalances</td>
+      </tr>
+      <tr>
+        <td>F1</td>
+        <td>Alcohol Abuse</td>
+      </tr>
+      <tr>
+        <td>F2</td>
+        <td>Schizophrenia and Other Psychotic Disorders</td>
+      </tr>
+      <tr>
+        <td>F3</td>
+        <td>Depressive and Bipolar Disorders</td>
+      </tr>
+      <tr>
+        <td>F4</td>
+        <td>Anxiety Disorders</td>
+      </tr>
+      <tr>
+        <td>G0</td>
+        <td>Meningitis and Other Inflammatory Conditions</td>
+      </tr>
+      <tr>
+        <td>G2</td>
+        <td>Movement Disorders</td>
+      </tr>
+      <tr>
+        <td>G3</td>
+        <td>Demyelinating Diseases of the Central Nervous System</td>
+      </tr>
+      <tr>
+        <td>G4</td>
+        <td>Headaches, Epilepsy, and Other Neurological Conditions</td>
+      </tr>
+      <tr>
+        <td>G5</td>
+        <td>Nerve Disorders and Carpal Tunnel Syndrome</td>
+      </tr>
+      <tr>
+        <td>G6</td>
+        <td>Neuropathies</td>
+      </tr>
+      <tr>
+        <td>G8</td>
+        <td>Paralysis and Pain Disorders</td>
+      </tr>
+      <tr>
+        <td>G9</td>
+        <td>Brain Disorders</td>
+      </tr>
+      <tr>
+        <td>H0</td>
+        <td>Eyelid and Lacrimal Disorders</td>
+      </tr>
+      <tr>
+        <td>H1</td>
+        <td>Corneal and Conjunctival Disorders</td>
+      </tr>
+      <tr>
+        <td>H2</td>
+        <td>Cataracts and Other Lens Disorders</td>
+      </tr>
+      <tr>
+        <td>H3</td>
+        <td>Retinal Disorders</td>
+      </tr>
+      <tr>
+        <td>H4</td>
+        <td>Optic Nerve and Glaucoma Disorders</td>
+      </tr>
+      <tr>
+        <td>H5</td>
+        <td>Vision and Eye Movement Disorders</td>
+      </tr>
+      <tr>
+        <td>H6</td>
+        <td>Otitis and Other Ear Disorders</td>
+      </tr>
+      <tr>
+        <td>H7</td>
+        <td>Ear Disorders</td>
+      </tr>
+      <tr>
+        <td>H8</td>
+        <td>Vertigo</td>
+      </tr>
+      <tr>
+        <td>H9</td>
+        <td>Hearing Disorders and Ear Pain</td>
+      </tr>
+      <tr>
+        <td>I0</td>
+        <td>Rheumatic Heart Valve Diseases</td>
+      </tr>
+      <tr>
+        <td>I1</td>
+        <td>Hypertension and Related Disorders.</td>
+      </tr>
+      <tr>
+        <td>I2</td>
+        <td>Coronary Artery Disease, Myocardial Infarction, and Other Cardiovascular Disorders</td>
+      </tr>
+      <tr>
+        <td>I3</td>
+        <td>Pericardial and Mitral Valve Disorders</td>
+      </tr>
+      <tr>
+        <td>I4</td>
+        <td>Cardiac Arrhythmias and Cardiomyopathies</td>
+      </tr>
+      <tr>
+        <td>I5</td>
+        <td>Heart Failure</td>
+      </tr>
+      <tr>
+        <td>I6</td>
+        <td>Cerebrovascular Diseases and Conditions</td>
+      </tr>
+      <tr>
+        <td>I7</td>
+        <td>Aneurysm and Atherosclerosis of Major Blood Vessels</td>
+      </tr>
+      <tr>
+        <td>I8</td>
+        <td>Varicose Veins, Thrombosis, and Other Vascular Disorders</td>
+      </tr>
+      <tr>
+        <td>I9</td>
+        <td>Hypotension</td>
+      </tr>
+      <tr>
+        <td>J0</td>
+        <td>Acute Upper Respiratory Infections and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>J1</td>
+        <td>Pneumonia and Influenza</td>
+      </tr>
+      <tr>
+        <td>J2</td>
+        <td>Acute Lower Respiratory Infections</td>
+      </tr>
+      <tr>
+        <td>J3</td>
+        <td>Chronic Upper Respiratory Tract Disorders</td>
+      </tr>
+      <tr>
+        <td>J4</td>
+        <td>Asthma, Bronchitis, and Other Obstructive Pulmonary Diseases</td>
+      </tr>
+      <tr>
+        <td>J8</td>
+        <td>Pulmonary Edema</td>
+      </tr>
+      <tr>
+        <td>J9</td>
+        <td>Pleural Disorders and Complications of Respiratory Procedures</td>
+      </tr>
+      <tr>
+        <td>K0</td>
+        <td>Dental Disorders and Caries (NOT cavities)</td>
+      </tr>
+      <tr>
+        <td>K1</td>
+        <td>Oral Diseases and Conditions</td>
+      </tr>
+      <tr>
+        <td>K2</td>
+        <td>Gastric Disorders and Esophageal Conditions</td>
+      </tr>
+      <tr>
+        <td>K3</td>
+        <td>Appendicitis and Related Stomach Conditions</td>
+      </tr>
+      <tr>
+        <td>K4</td>
+        <td>Hernias and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>K5</td>
+        <td>Gastrointestinal Disorders and Conditions</td>
+      </tr>
+      <tr>
+        <td>K6</td>
+        <td>Anorectal Disorders and Conditions</td>
+      </tr>
+      <tr>
+        <td>K7</td>
+        <td>Liver Diseases and Conditions</td>
+      </tr>
+      <tr>
+        <td>K8</td>
+        <td>Gallbladder and Pancreatic Disorders</td>
+      </tr>
+      <tr>
+        <td>K9</td>
+        <td>Digestive System Hemorrhages</td>
+      </tr>
+      <tr>
+        <td>L0</td>
+        <td>Skin Infections and Abscesses</td>
+      </tr>
+      <tr>
+        <td>L2</td>
+        <td>Dermatitis and Eczema</td>
+      </tr>
+      <tr>
+        <td>L3</td>
+        <td>Other Dermatitis Conditions</td>
+      </tr>
+      <tr>
+        <td>L4</td>
+        <td>Pityriasis and Lichen Planus Conditions</td>
+      </tr>
+      <tr>
+        <td>L5</td>
+        <td>Urticaria and Related Skin Conditions</td>
+      </tr>
+      <tr>
+        <td>L6</td>
+        <td>Nail Disorders</td>
+      </tr>
+      <tr>
+        <td>L7</td>
+        <td>Hair Follicle Disorders</td>
+      </tr>
+      <tr>
+        <td>L8</td>
+        <td>Skin Conditions Affecting the Sacral Region</td>
+      </tr>
+      <tr>
+        <td>L9</td>
+        <td>Ulcer and Lupus Erythematosus Skin Conditions</td>
+      </tr>
+      <tr>
+        <td>M0</td>
+        <td>Rheumatoid Arthritis and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>M1</td>
+        <td>Osteoarthritis, Gout, and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>M2</td>
+        <td>Joint Pain and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>M3</td>
+        <td>Systemic Lupus Erythematosus and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>M4</td>
+        <td>Spinal Disorders and Spondylosis</td>
+      </tr>
+      <tr>
+        <td>M5</td>
+        <td>Intervertebral Disc Disorders and Radiculopathy</td>
+      </tr>
+      <tr>
+        <td>M6</td>
+        <td>Muscle, Tendon, and Synovium Disorders</td>
+      </tr>
+      <tr>
+        <td>M7</td>
+        <td>Musculoskeletal Pain and Related Conditions</td>
+      </tr>
+      <tr>
+        <td>M8</td>
+        <td>Bone Disorders and Fractures</td>
+      </tr>
+      <tr>
+        <td>M9</td>
+        <td>Spinal and Joint Disorders</td>
+      </tr>
+      <tr>
+        <td>N1</td>
+        <td>Kidney Disorders and Diseases</td>
+      </tr>
+      <tr>
+        <td>N2</td>
+        <td>Urinary Calculi and Kidney Atrophy</td>
+      </tr>
+      <tr>
+        <td>N3</td>
+        <td>Urinary Tract Infections and Bladder Disorders</td>
+      </tr>
+      <tr>
+        <td>N4</td>
+        <td>Male Genital Organ Disorders</td>
+      </tr>
+      <tr>
+        <td>N5</td>
+        <td>Male Genital Pain and Unspecified Disorders</td>
+      </tr>
+      <tr>
+        <td>N6</td>
+        <td>Breast Disorders</td>
+      </tr>
+      <tr>
+        <td>N7</td>
+        <td>Female Genital Infections and Inflammations</td>
+      </tr>
+      <tr>
+        <td>N8</td>
+        <td>Female Genital Organ Disorders</td>
+      </tr>
+      <tr>
+        <td>N9</td>
+        <td>Menstrual and Bleeding Disorders</td>
+      </tr>
+      <tr>
+        <td>O0</td>
+        <td>Pregnancy Complications and Disorders</td>
+      </tr>
+      <tr>
+        <td>O1</td>
+        <td>Pregnancy-Related Hypertension Disorders</td>
+      </tr>
+      <tr>
+        <td>O2</td>
+        <td>Pregnancy Complications and Conditions</td>
+      </tr>
+      <tr>
+        <td>O3</td>
+        <td>Pregnancy Care and Fetal Conditions</td>
+      </tr>
+      <tr>
+        <td>O4</td>
+        <td>Pregnancy Complications Related to Amniotic Fluid and Membranes</td>
+      </tr>
+      <tr>
+        <td>O6</td>
+        <td>Labor Complications and Obstructions</td>
+      </tr>
+      <tr>
+        <td>O7</td>
+        <td>Labor and Delivery Complications Involving Fetal Stress</td>
+      </tr>
+      <tr>
+        <td>O8</td>
+        <td>Delivery Encounters and Post-Delivery Complications</td>
+      </tr>
+      <tr>
+        <td>O9</td>
+        <td>Systemic Diseases Complicating Pregnancy and Childbirth</td>
+      </tr>
+      <tr>
+        <td>R5</td>
+        <td>Convulsions and Seizures</td>
+      </tr>
+      <tr>
+        <td>R6</td>
+        <td>Sleep Apnea and Related Disorders</td>
+      </tr>
+      <tr>
+        <td>R7</td>
+        <td>Headache Disorders</td>
+      </tr>
+      <tr>
+        <td>R8</td>
+        <td>Bipolar and Related Disorders</td>
+      </tr>
+      <tr>
+        <td>R9</td>
+        <td>Anxiety Disorders</td>
+      </tr>
+      <tr>
+        <td>S0</td>
+        <td>Unspecified Injuries</td>
+      </tr>
+      <tr>
+        <td>S1</td>
+        <td>Throat Injuries and Cervical Fractures</td>
+      </tr>
+      <tr>
+        <td>S2</td>
+        <td>Thoracic Injuries and Fractures</td>
+      </tr>
+      <tr>
+        <td>S3</td>
+        <td>Lower Back and Abdominal Injuries</td>
+      </tr>
+      <tr>
+        <td>S4</td>
+        <td>Shoulder and Arm Injuries and Fractures</td>
+      </tr>
+      <tr>
+        <td>S5</td>
+        <td>Forearm and Elbow Injuries and Fractures</td>
+      </tr>
+      <tr>
+        <td>S6</td>
+        <td>Finger, Hand, and Wrist Injuries and Fractures</td>
+      </tr>
+      <tr>
+        <td>S7</td>
+        <td>Thigh and Hip Injuries and Fractures</td>
+      </tr>
+      <tr>
+        <td>S8</td>
+        <td>Knee and Lower Leg Injuries and Fractures</td>
+      </tr>
+      <tr>
+        <td>S9</td>
+        <td>Foot and Ankle Injuries and Fractures</td>
+      </tr>
+      <tr>
+        <td>T1</td>
+        <td>Foreign Body Ingestion and Related Injuries</td>
+      </tr>
+      <tr>
+        <td>T2</td>
+        <td>Burn Injuries</td>
+      </tr>
+      <tr>
+        <td>T3</td>
+        <td>Burns and Poisoning</td>
+      </tr>
+      <tr>
+        <td>T5</td>
+        <td>Toxic Effects and Poisoning</td>
+      </tr>
+      <tr>
+        <td>T6</td>
+        <td>Heat and Venom Effects</td>
+      </tr>
+      <tr>
+        <td>T7</td>
+        <td>Allergies and Reactions</td>
+      </tr>
+      <tr>
+        <td>T8</td>
+        <td>Injury Complications</td>
+      </tr>
+      <tr>
+        <td>U0</td>
+        <td>COVID-19 Diagnosis</td>
+      </tr>
+      <tr>
+        <td>V2</td>
+        <td>Motorcycle Accident Injuries</td>
+      </tr>
+      <tr>
+        <td>Z0</td>
+        <td>Biological Exposure Observations</td>
+      </tr>
+      <tr>
+        <td>Z2</td>
+        <td>Viral Exposure</td>
+      </tr>
+      <tr>
+        <td>Z3</td>
+        <td>Pregnancy and Birth Encounters</td>
+      </tr>
+      <tr>
+        <td>Z4</td>
+        <td>Surgical Aftercare Encounters</td>
+      </tr>
+      <tr>
+        <td>Z7</td>
+        <td>Home Care Assistance</td>
+      </tr>
+      <tr>
+        <td>Z8</td>
+        <td>Personal Medical History</td>
+      </tr>
+      <tr>
+        <td>Z9</td>
+        <td>Medical Device Presence and Food Allergies</td>
+      </tr>
+    </tbody>
+  </table>
 
       <!-- jQuery framework-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
