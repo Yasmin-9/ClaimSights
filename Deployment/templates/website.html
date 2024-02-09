@@ -75,24 +75,27 @@
           and instantly find out if your insurance claim would likely be paid ('COVERED') 
           or not ('REJECTED')
           <div class="container mt-5 dropdown">
-          <button id="age-menu" class="btn btn-primary" type="button" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-toggle="tooltip" title="Select your Age Range"
-          aria-expanded="false">Age</button>
+          <button id="age-menu" class="btn btn-primary" type="button" data-bs-toggle="dropdown" 
+          aria-haspopup="true" data-bs-toggle="tooltip" title="Select your Age Range"
+          aria-expanded="false" onclick="updateButtonText('age-menu', 'Age')">Age</button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">0-15</a></li>
-      <li><a class="dropdown-item" href="#">16-25</a></li>
-      <li><a class="dropdown-item" href="#">26-45</a></li>
-      <li><a class="dropdown-item" href="#">46-65</a></li>
-      <li><a class="dropdown-item" href="#">66+</a></li>
+      <li><a class="dropdown-item" href="#" onclick="updateButtonText('age-menu', '0-15')">0-15</a></li>
+      <li><a class="dropdown-item" href="#" onclick="updateButtonText('age-menu', '16-25')">16-25</a></li>
+      <li><a class="dropdown-item" href="#" onclick="updateButtonText('age-menu', '26-45')">26-45</a></li>
+      <li><a class="dropdown-item" href="#" onclick="updateButtonText('age-menu', '46-65')">46-65</a></li>
+      <li><a class="dropdown-item" href="#" onclick="updateButtonText('age-menu', '66+')">66+</a></li>
     </ul>
           </div>
         </div>
         <div class="container mt-5 dropdown">
-          <button id="sex-menu" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-toggle="tooltip" title="Select your Sex"
-                  aria-expanded="false">Sex</button>
+          <button id="sex-menu" class="btn btn-primary dropdown-toggle"
+           type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+            data-bs-toggle="tooltip" title="Select your Sex"
+            aria-expanded="false" onclick="updateButtonText('sex-menu', 'Sex')">Sex</button>
                   
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Female</a></li>
-              <li><a class="dropdown-item" href="#">Male</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateButtonText('sex-menu', 'Female')">Female</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateButtonText('sex-menu', 'Male')">Male</a></li>
             </ul>
         </div>
         <div class="container mt-5 dropdown">

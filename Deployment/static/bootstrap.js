@@ -1,6 +1,6 @@
 //note to self: 'document'is a global object, referring to .html
 
-    
+
 // Creating re-usable instances of Tooltips (Hovering over for text)
 
 document.addEventListener('DOMContentLoaded', function () { 
@@ -21,17 +21,25 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   });
   
+  // Go to next page via button click function
 function nextPage(){
-  window.location.href = '/diagnosis-page.html';
-  // if path doesn't work TRY: 'templates/next-page.html'
+  window.location.href = '/diagnosis-page.html';}
 
+// Updating the 3 interactive parameter buttons for model searching
+function updateButtonText (buttonId, ClickedOption){
+  document.getElementById(buttonId).innerText = ClickedOption;
 }
+
+//fixing function, ignore for now
+function userSelectedOptions (buttonId1,buttonId2,buttonId3){
+  document.getElementById();
+}
+
 
 function homePage(){
   window.location.href = '/';
 
 }
-
 
 function searchFunction() {
   var input, filter, table, tr, td, i, txtValue;
