@@ -1,8 +1,19 @@
 #importing dependencies
 from flask import Flask,render_template
 from flask_bootstrap import Bootstrap
+import json
+import pickle
 
+try:
+    with open('model.pkl', 'rb') as f:
+        model = pickle.load(f)
+    print("Model loaded successfully.")
+except Exception as e:
+    print("Error loading the model:", e)
+    model = None
 
+with open('output.json', 'r') as f:
+    data = json.load(f)
 
 def create_app():
   app = Flask(__name__)
