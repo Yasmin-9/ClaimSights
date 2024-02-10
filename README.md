@@ -19,12 +19,9 @@ Optimization:
 
 The balanced accuracy scores and the precision and recall scores of both machine learning models.
 
-Machine Learning Model 1:
-  * Accuracy: 
+Classification Report:
+![image](https://github.com/Yasmin-9/Project-4-Group-5/assets/136015250/678e8285-fb55-4d18-8fbd-af85987d4133)
 
-  * Precision: 
-  
-  * Recall scores: 
 
 ## HTML & JavaScript
 
