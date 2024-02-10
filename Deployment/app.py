@@ -66,8 +66,12 @@ def create_app():
       #predciting Result using the values in dtaframe 
       prediction = model.predict(X_pred_df)
       predict = prediction[0]
+      if (predict == 'Paid'):
+          result = 'Approved'
+      elif (predict == 'Rejected'):
+          result = 'Denied'
 
-      return str(predict)
+      return str(result)
 
 
   
