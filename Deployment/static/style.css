@@ -2,17 +2,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f6f6f6 !important;
+    background-color: #91b8d9d8 !important;
     margin: 0;
     padding: 0;
 }
-
-/* .pill-icon { 
-    position: absolute;
-    left: 0; 
-    margin-left: 405px;
-    margin-top: -18px;
-} */
 
 .slogan {
     text-align: center;
@@ -41,8 +34,6 @@ h3 {
     text-transform: capitalize;
 
 }
-
-
 
 #sex-menu { 
     position: absolute;
@@ -99,12 +90,20 @@ h3 {
     background-color: #ec6359; 
     padding: 20px; 
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.36); 
-    border-radius: 10px;
-}
+    border-radius: 10px; 
+} 
 
+.artsy { 
+  background-color: /*#378edad8*/ #3e5385;
+  height: 40vh; 
+}
 .calculator-text {
+    top: 20%;
+    left: 2%;
+    bottom: 20%;
+    position: absolute;
     margin-left: 50px; 
-    background-color: #a7cfdfd8;
+    background-color: #dfa7a7;
     padding: 20px;
     width: 500px;
     height: 75vh; 
@@ -147,6 +146,9 @@ h3 {
     border-radius: 4px;
   }
   
+
+
+
 /* Styles for home page button */
 .button-return {
     position: absolute;
@@ -162,51 +164,3 @@ h3 {
     transition: background-color 0.3s;
   }
 
-
-  table {
-    margin: 100px auto 0;
-    border-collapse: collapse;
-    width: calc(100% - 200px);
-  }
-  
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align:left;
-  }
-  
-  th {
-    background-color: #ec6359;
-  }
-
-  td {
-    background-color: #7497ea;
-  }
-  
-
-  .search-container {
-    margin: 50px 0;
-  }
-  
-  /* Styles for search input */
-  input[type="text"] {
-    width: 200px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-/* Styles for home page button */
-.button-return {
-    position: absolute;
-    top: 5%;
-    right: 7.5%;
-    width: 20px; 
-    text-wrap: nowrap;
-    padding: 10px 60px;
-    background-color: #7497ea;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
