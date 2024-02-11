@@ -61,7 +61,7 @@
 <!--Form for people to submit to see if something will be paid or rejected-->
 <br>  
 <br>
-<h2>Approval Predictor</h2>
+<h4>Approval Predictor</h4>
   <form method="Post" action="/predict"> 
       <label><b>Age</b></label>
       <input data-bs-toggle="tooltip" title="Please enter a value between 0-97" type="text" name="Age"><br><br>
@@ -76,7 +76,7 @@
   </form> 
 
   <div class="container">
-    <h2>Prediction Result</h2>
+    <h4>Prediction Result:</h4>
     {% if result == 'Approved' %}
         <button type="button" class="btn btn-success" style="font-size: 40px; padding: 15px 30px;">APPROVED</button>
     {% elif result == 'Denied' %}
