@@ -24,21 +24,30 @@ Findings: 1) data was made up of nearly twice as many male's than females.
 ## ETL, and Data Preprocessing 
 The database was loaded in using POSTGRES, connected to engine via SQL
 
-## Machine Modeling: Unsupervised learning
+## Machine Modeling: Supervised learning
+The most ideal model for this data type was random forest classifier as the data had binary and multiclass features with a large number of total features. To balance the distribution of the data sampling between the 'status' category, a ```class_weight``` hyperparameter was used to enhance the machines ability to predict more accurately. 
 
-to BE CONNTINUED
-K_means model
+```RandomForestClassifier(class_weight={'Paid': 1, 'Rejected': 2}, min_samples_split=4, n_estimators=500, random_state=42)```
 
-Optimization: 
+### Optimization: 
+6 seperate optimization models were ran in order to increase the accuracy and scores of the classification report of the model:
 
+1. Hypertuning the parameters
+2. Setting class_weight to 'balanced' for proportioning
+3. Utilizing SMOTE to oversample 'Rejected' class
+4. Manually modifying class_weights
+5. Combining SMOTE and TomkeLinks to oversample 'Rejected' class and undersample 'Paid' class for even distribution
+6. Swapping a core feature, with an alternatively close but broader feature ('Diagnosis_Family')
 
-### Machine Results:
-- add accuracy results
-- 
+Optimization #4 resulted in the best evaluation score of the model, with the following accuracy score:
+
+```Accuracy:  0.7802148861548739```
+
 #### Classification Report:
 
 ![image](https://github.com/Yasmin-9/Project-4-Group-5/assets/136015250/678e8285-fb55-4d18-8fbd-af85987d4133)
 
+All scores for the 'Paid' are over 80%, implying the model predicted 80% of all True-Positives (refer to recall score), whereas the 'Rejected' class scored lower in comparison and only 68% in its recall score. This was expected as the distribution of data had more than twice as many instances of 'Paid' classes, leaving less sampling data for the model to train on for the latter class.
 
 ### Front-end Development
 The site page's were developed using bootstrap frameworks for styling, with other styling tools such as Google Font's, and CSS. Powered by Flask APP and rendering templates and using request to store user interactive input's.
