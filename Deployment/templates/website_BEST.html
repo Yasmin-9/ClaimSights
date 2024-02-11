@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Style.CSS-->
+ <link rel="stylesheet" type="text/css" href="static/style.css">
+  <!-- BootStrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="static/stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@900&display=swap" rel="static/stylesheet">
+  <!-- Favicon image-->
+  <link rel="icon" type="image/png" sizes="32x32" href="static/pill_ideal.png">
+  
+  
+  <title>ClaimSights</title>
+  
+
+
+</head>
+<body>
+
+<!--Machine Learning Website Name-->
+  <div class="slogan">
+    <br>
+  <h1 data-bs-toggle="tooltip" title="Machine Learning Foresights into Health Insurance Claims"><b>ClaimSights</b></h1>
+  <h5 class="description"><em>Machine Learning Foresights into Health Insurance Claims</em></h5>
+  <img class="pill-icon" src="static/pill.png" alt="blue-red-pill" width="64" height="64">
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="artsy">
+</div>
+<div class="calculator-wrapper">
+  <div class="calculator-text">
+    <div style="text-align: center;">
+      <h4><b>TRY NOW</b></h4>
+      Fill in your information below by inserting the fields (Age, Sex and Diagnosis Code), 
+      and instantly find out if your insurance claim would likely be <b>APPROVED</b>
+      or <b>DENIED</b>.
+<!--Form for people to submit to see if something will be paid or rejected-->
+<br>  
+<br>
+<h2>Approval Predictor</h2>
+  <form method="Post" action="/predict"> 
+      <label><b>Age</b></label>
+      <input data-bs-toggle="tooltip" title="Please enter a value between 0-97" type="text" name="Age"><br><br>
+
+      <label><b>Sex</b></label>
+      <input data-bs-toggle="tooltip" title="Please enter 'F' for female or 'M' for male" type="text" name="Sex"><br><br>
+
+      <label data-bs-toggle="tooltip" title="Diagnosis Code found under 'View List'"><b>Code</b></label>
+      <input data-bs-toggle="tooltip" title="Please enter the 2 character code in UPPERCASE" type="text" name="DiagnosisType"><br><br>
+
+      <input type="submit" value="Predict"><br><br>
+  </form> 
+
+  <div class="container">
+    <h2>Prediction Result</h2>
+    {% if result == 'Approved' %}
+        <button type="button" class="btn btn-success" style="font-size: 40px; padding: 15px 30px;">APPROVED</button>
+    {% elif result == 'Denied' %}
+        <button type="button" class="btn btn-danger" style="font-size: 40px; padding: 15px 30px;">DENIED</button>
+    {% endif %}
+</div>
+</div>
+</div>
+</div>
+
+
+<!--About Notebook cotainer-->
+<div class="content-wrapper-about">
+  <div class="about_text">
+    <div><b>About</b><br>
+      <br>
+      This site features a model that helps
+      users choose the insurance policy best
+      suited for them, based on their sex,
+      age group and diagnosis type!
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper-accuracy">
+  <div class="model_accuracy_text">
+    <div><b><em>"I don't know my diagnosis code"</em></b><br>
+      <br>
+      Not sure of which listed code
+      matches your diagnosis type? 
+      Click below to view a list of the diagnosis 
+      code's and their descriptions.
+      <br>
+      <br>
+      <button id="next-page-button" data-bs-toggle="tooltip" title="Click me!" onclick="nextPage()">View List</button>
+      <div class="tooltip" role="tooltip"></div>
+
+
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="disclaimer" style="color: rgba(0, 0, 0, 0.331);">
+  <p><em>Disclaimer: This model is 78% accurate in predicting, and should not be used as a sole advisor. Please speak to your health insurance advisor for curated advice. Created by: Yasmin, Allan, Merve and Qudsia</em></p>
+</div>
+
+  <!-- jQuery framework-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Popper.JS/Floating UI framework-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" crossorigin="anonymous"></script>
+  <!-- BootStrap JS framework -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- local bootstrap.js file-->
+  <script src="static/bootstrap.js"></script>
+</body>
+
+
+
+
+</html>
