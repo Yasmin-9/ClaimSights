@@ -1,4 +1,4 @@
-# ClaimSights
+# ClaimSights ![image](https://github.com/Yasmin-9/Project-4-Group-5/assets/136015250/58cb8a22-2ca9-4add-a323-46eb023cbc25)
 ### Machine Learning Foresights into Health Insurance Claims
 
 ## Overview
@@ -50,7 +50,7 @@ Optimization #4 resulted in the best evaluation score of the model, with the fol
 All scores for the 'Paid' are over 80%, implying the model predicted 80% of all True-Positives (refer to recall score), whereas the 'Rejected' class scored lower in comparison and only 68% in its recall score. This was expected as the distribution of data had more than twice as many instances of 'Paid' classes, leaving less sampling data for the model to train on for the latter class.
 
 ### Front-end Development
-The site page's were developed using bootstrap frameworks for styling, with other styling tools such as Google Font's, and CSS. Powered by Flask APP and rendering templates and using request to store user interactive input's.
+The site page's were developed using bootstrap frameworks for styling buttons and tooltips and other layouts. Along with other styling tools such as Google Font's, and CSS. Powered by Flask APP and rendering templates and using request to store user interactive input's, 
 
  
 ## Summary
