@@ -12,7 +12,9 @@ Data Cleaning : Using numpy, scipy.stat to reduce column clutter, correct dataty
 
 Data Analysis: Columns of interest were graphed using matplotlib, to assess general trends in data. 
 
-Findings: 1) data was made up of nearly twice as many male's than females.
+Findings:
+          
+          1) data was made up of nearly twice as many male's than females.
 ![image](https://github.com/Yasmin-9/Project-4-Group-5/assets/136015250/4965bde5-90c9-432a-bbe8-443a4fdb25c2)
 
           2) The age distribution was a normal bell curve from age's 0 - 100+, with the peak age group being between 30-50.
@@ -22,7 +24,13 @@ Findings: 1) data was made up of nearly twice as many male's than females.
 ![image](https://github.com/Yasmin-9/Project-4-Group-5/assets/136015250/328536c7-828a-4ed1-a351-22a5377eefc7)
 
 ## ETL, and Data Preprocessing 
-The database was loaded in using POSTGRES, connected to engine via SQL
+The database was loaded in using POSTGRES, connected to engine via SQL. After the data was loaded, steps were taken to prepare data for machine training. 
+
+- Replaced string values "Male" and "Female" to integers (0 and 1 respectively) 
+- Applied standard scaling on relevant columns for consistency
+- Two seperate encoding methods were applied to utilize it across various machine learning (ML) models for better optimization:
+          - Dummy Data: Due to the nature of Diagnosis code's being multiclass and categorical, the                         Diagnosis_Group was dummified to make it usable in the ML model.
+          - One hot encoding: This method was applied to 'Diagnosis_Family' as per the reason listed above
 
 ## Machine Modeling: Supervised learning
 The most ideal model for this data type was random forest classifier as the data had binary and multiclass features with a large number of total features. To balance the distribution of the data sampling between the 'status' category, a ```class_weight``` hyperparameter was used to enhance the machines ability to predict more accurately. 
@@ -39,11 +47,12 @@ The most ideal model for this data type was random forest classifier as the data
 5. Combining SMOTE and TomkeLinks to oversample 'Rejected' class and undersample 'Paid' class for even distribution
 6. Swapping a core feature, with an alternatively close but broader feature ('Diagnosis_Family')
 
-Optimization #4 resulted in the best evaluation score of the model, with the following accuracy score:
+Insights: Optimization #4 resulted in the best evaluation score of the model, with the following score:
+```Accuracy:  0.7802148861548739```. Repeated trialing showed that when utilizing the 'Diagnosis_Family' over 'Diagnosis_Group', the broader of the two features, produced results with lower accuracy and overall f1 scores inidicating a more distinctive feature was better off for a random forest classifier.
 
-```Accuracy:  0.7802148861548739```
+#### Classification Report of the Best Optimization Model (#4):
 
-#### Classification Report:
+In the selected model, the 'Status' class was encoded to integers from ```['Paid', 'Rejected']``` to ```[1,2]``` setting the weights manually and the input columns were converted to strings. The changes were applied and trained to the model with.
 
 ![image](https://github.com/Yasmin-9/Project-4-Group-5/assets/136015250/678e8285-fb55-4d18-8fbd-af85987d4133)
 
