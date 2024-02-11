@@ -10,7 +10,10 @@ body {
 
 .slogan {
     text-align: center;
-    position: absolute;
+
+    position: relative;
+    min-height: 100px;
+
     top: 5%; 
     left: 50%; 
     transform: translateX(-50%);
@@ -51,6 +54,8 @@ h3 {
 } 
 
 .content-wrapper-about {
+    margin-top: 1%;
+
     position: absolute; 
     height: 50vh; 
     width: 300px;
@@ -61,6 +66,8 @@ h3 {
 }
 
 .content-wrapper-accuracy {
+    margin-top: 10px;
+
     position: absolute; 
     height: 50vh; 
     width: 300px;
@@ -99,19 +106,19 @@ h3 {
   height: 40vh; 
 }
 .calculator-text {
-    top: 20%;
-    left: 2%;
-    bottom: 20%;
-    position: absolute;
-    margin-left: 50px; 
-    background-color: #dfa7a7;
-    padding: 20px;
-    width: 500px;
-    height: 75vh; 
-    border-radius: 10px;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.36);
-    border-width: 2px;
-    border-color: #052a8f;
+  margin-top: 20px;
+
+  top: 20%;
+  left: 5%;
+  position: absolute; 
+  background-color: #dfa7a7;
+  padding: 20px;
+  max-width: 500px; /* */
+  margin: 0 auto; /* */
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.36);
+  border-width: 2px;
+  border-color: #052a8f;
 }
 
   table {
@@ -176,3 +183,4 @@ h3 {
     text-transform: capitalize;
     font-weight: bold !important;
   }
+
