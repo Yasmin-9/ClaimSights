@@ -54,33 +54,33 @@
 <div class="calculator-wrapper">
   <div class="calculator-text">
     <div style="text-align: center;">
-      <b>TRY NOW</b>
-      <br>
-      <br>
-      Fill in your general information below by selecting the corresponding options, 
-      and instantly find out if your insurance claim would likely be paid ('APPROVED') 
-      or not ('DENIED')
+      <h4><b>TRY NOW</b></h4>
+      Fill in your information below by inserting the fields (Age, Sex and Diagnosis Code), 
+      and instantly find out if your insurance claim would likely be <b>APPROVED</b>
+      or <b>DENIED</b>.
 <!--Form for people to submit to see if something will be paid or rejected-->
-  <h1>Approval Predictor</h1>
+<br>  
+<br>
+<h2>Approval Predictor</h2>
   <form method="Post" action="/predict"> 
-      <label>Age</label>
-      <input type="text" name="Age"><br><br>
+      <label><b>Age</b></label>
+      <input data-bs-toggle="tooltip" title="Please enter a value between 0-97" type="text" name="Age"><br><br>
 
-      <label>Sex</label>
-      <input type="text" name="Sex"><br><br>
+      <label><b>Sex</b></label>
+      <input data-bs-toggle="tooltip" title="Please enter 'F' for female or 'M' for male" type="text" name="Sex"><br><br>
 
-      <label>Diagnosis Type</label>
-      <input type="text" name="DiagnosisType"><br><br>
+      <label data-bs-toggle="tooltip" title="Diagnosis Code found under 'View List'"><b>Code</b></label>
+      <input data-bs-toggle="tooltip" title="Please enter the 2 character code in UPPERCASE" type="text" name="DiagnosisType"><br><br>
 
       <input type="submit" value="Predict"><br><br>
   </form> 
 
   <div class="container">
-    <h1>Prediction Result</h1>
+    <h2>Prediction Result</h2>
     {% if result == 'Approved' %}
-        <button type="button" class="btn btn-success">APPROVED</button>
+        <button type="button" class="btn btn-success" style="font-size: 40px; padding: 15px 30px;">APPROVED</button>
     {% elif result == 'Denied' %}
-        <button type="button" class="btn btn-danger">DENIED</button>
+        <button type="button" class="btn btn-danger" style="font-size: 40px; padding: 15px 30px;">DENIED</button>
     {% endif %}
 </div>
 </div>
@@ -118,7 +118,13 @@
     </div>
   </div>
 </div>
-
+<br>
+<br>
+<br>
+<br>
+<div class="disclaimer" style="color: rgba(0, 0, 0, 0.331);">
+  <p><em>Disclaimer: This model is 78% accurate in predicting, and should not be used as a sole advisor. Please speak to your health insurance advisor for curated advice. Created by: Yasmin, Allan, Merve and Qudsia</em></p>
+</div>
 
   <!-- jQuery framework-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
