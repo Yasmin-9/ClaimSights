@@ -71,7 +71,7 @@ def create_app():
       elif (predict == 'Rejected'):
           result = 'Denied'
 
-      return str(result)
+      return render_template('website.html', result=result)
 
 
   
