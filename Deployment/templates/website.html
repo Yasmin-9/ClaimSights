@@ -25,6 +25,30 @@
 </head>
 <body>
 
+<!--Machine Learning Website Name-->
+  <div class="slogan">
+    <br>
+  <h1 data-bs-toggle="tooltip" title="Machine Learning Foresights into Health Insurance Claims"><b>ClaimSights</b></h1>
+  <h5 class="description"><em>Machine Learning Foresights into Health Insurance Claims</em></h5>
+  <img class="pill-icon" src="static/pill.png" alt="blue-red-pill" width="64" height="64">
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="artsy">
 </div>
 <div class="calculator-wrapper">
@@ -34,8 +58,8 @@
       <br>
       <br>
       Fill in your general information below by selecting the corresponding options, 
-      and instantly find out if your insurance claim would likely be paid ('COVERED') 
-      or not ('REJECTED')
+      and instantly find out if your insurance claim would likely be paid ('APPROVED') 
+      or not ('DENIED')
 <!--Form for people to submit to see if something will be paid or rejected-->
   <h1>Approval Predictor</h1>
   <form method="Post" action="/predict"> 
@@ -49,19 +73,20 @@
       <input type="text" name="DiagnosisType"><br><br>
 
       <input type="submit" value="Predict"><br><br>
-  </form>
+  </form> 
+
+  <div class="container">
+    <h1>Prediction Result</h1>
+    {% if result == 'Approved' %}
+        <button type="button" class="btn btn-success">APPROVED</button>
+    {% elif result == 'Denied' %}
+        <button type="button" class="btn btn-danger">DENIED</button>
+    {% endif %}
+</div>
 </div>
 </div>
 </div>
 
-
-<!--Machine Learning Website Name-->
-  <div class="slogan">
-  <h1 data-bs-toggle="tooltip" title="Machine Learning Foresights into Health Insurance Claims"><b><em>ClaimSights</em></b></h1>
-  <h5 class="description"><em>Machine Learning Foresights into Health Insurance Claims</em></h5>
-  <img class="pill-icon" src="static/pill.png" alt="blue-red-pill" width="64" height="64">
-
-</div>
 
 <!--About Notebook cotainer-->
 <div class="content-wrapper-about">
@@ -94,7 +119,7 @@
   </div>
 </div>
 
-  
+
   <!-- jQuery framework-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <!-- Popper.JS/Floating UI framework-->
