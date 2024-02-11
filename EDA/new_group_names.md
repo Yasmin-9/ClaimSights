@@ -10,7 +10,7 @@ K2 Upper digestive Disorders
 O6 Labor and Delivery Complications
 K7 Hepatobiliary disorders
 M4 Spinal Disorders
-I1 Traumatic Injuries
+I1 Vascular Disease
 R1 Gastrointestinal Symptoms
 R0 Respiratory Discomfort Ensemble
 K4 Hernias and Abdominal Wall Conditions
@@ -45,7 +45,7 @@ D5 Hematological Disorders
 Z9 Food Allergies
 D1 Benign Neoplasms of Various Sites
 M8 Bone Fractures
-E0 Endocrine Disorders
+E0 Thyroid Disorders
 F2 Mental Health Disroders 
 A9 Dengue Fever
 Z0 Biological Exposure
@@ -64,7 +64,7 @@ Q0 Developmental and Congentical conditions
 C6 Malignant Neoplasms of Urinary Organs
 C4 Carcinomia
 E5 Vitamin Deficencies
-B4 Fungal Infections
+B4 Abscess and Cysts
 D0 In Situ Neoplasms
 E2 Various Endocrine and Reproductive Disorders 
 C8 Lymphomas
