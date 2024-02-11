@@ -2,8 +2,7 @@
 ### Machine Learning Foresights into Health Insurance Claims
 
 ## Overview
-ClaimSight's is a websited designed to predict whether a user's insurance claim is going to be accepted or rejected. The user input's their general data by selecting the corresponding options (Sex, Age, and Diagnosis Code) that queries the parameters via Flask which launches a query and fetches the prediction given by the machine learning model, and returns the binary result with a popup stating 'COVERED' and 'REJECTED' respectively. The site is powered by AWS.
-
+ClaimSight is a website specifically created to forecast the likelihood of acceptance or rejection of an insurance claim submitted by a user. The process involves users inputting their general information, including sex, age, and diagnosis code, through the selection of corresponding options. These parameters are then queried via Flask, which initiates a request and retrieves predictions from a machine learning model. The outcome, presented as a binary result, is displayed to the user through a popup indicating either 'COVERED' or 'REJECTED.' The  platform is hosted on AWS. 
 
 ## Exploratory Data Analysis: 
 The dataset was provided by an insurance company with a confidentiality agreement, with the data spanning to over 250k rows. 
@@ -59,8 +58,7 @@ In the selected model, the 'Status' class was encoded to integers from ```['Paid
 All scores for the 'Paid' are over 80%, implying the model predicted 80% of all True-Positives (refer to recall score), whereas the 'Rejected' class scored lower in comparison and only 68% in its recall score. This was expected as the distribution of data had more than twice as many instances of 'Paid' classes, leaving less sampling data for the model to train on for the latter class.
 
 ### Front-end Development
-The site page's were developed using bootstrap frameworks for styling buttons and tooltips and other layouts. Along with other styling tools such as Google Font's, and CSS. Powered by Flask APP and rendering templates and using request to store user interactive input's, 
-
+HTML, JavaScript, Bootstrap, and CSS were fundamental to create a cohesive and user-friendly interface. Utilizing built-in HTML functions and Bootstrap frameworks to implement features like buttons, dropdowns and tooltips to assist or aid a user's experience. To maintain a consistent layout across different screens, CSS was employed , organizing styling within classes, ID's and div elements in the HTML structure. This approach ensured a seamless user experience regardless of the user's device, minimizing the impact of varying screen sizes on the site's design.
  
 ## Summary
 
