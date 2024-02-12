@@ -69,4 +69,4 @@ Several challenges were faced during the course of this project such as data inc
 
 For future endeavours, having data from several insurance companies can enhance the credibility of the model, and allow the model to expand it's horizons towards greater target audiences, such as insurance companies themselves to run insurance claims to detect for fraudelant claims. 
 
-Contriubtors: Yasmin, Allan, Qudsia, and Merve
+Contriubtors: Yasmin Bsata, Allan Mathews, Qudsia Ahmad, and Merve Celme
