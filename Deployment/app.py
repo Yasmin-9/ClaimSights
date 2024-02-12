@@ -1,13 +1,13 @@
-#importing dependencies
-from flask import Flask,render_template, request, jsonify
+# Importing dependencies
+from flask import Flask, render_template, request, jsonify
 from flask_bootstrap import Bootstrap
 import json
 import pickle
 import numpy as np
 import re
-import pandas as pd 
+import pandas as pd
 
-#importing pickle file
+# Importing pickle file
 try:
     with open('model.pkl', 'rb') as f:
         model = pickle.load(f)
@@ -16,24 +16,25 @@ except Exception as e:
     print("Error loading the model:", e)
     model = None
 
-#imporing one hot encoding json file
+# Importing one hot encoding json file
 with open('output.json', 'r') as f:
     data = json.load(f)
 
-#import age mapping json file
+# Importing age mapping json file
 with open('age_map.json', 'r') as f1:
     age_map = json.load(f1)
 
-def create_app():
-  app = Flask(__name__)
-  Bootstrap(app)
+# Creating Flask application object
+app = Flask(__name__)
+Bootstrap(app)
 
-  @app.route('/')
-  def index(): 
-      return render_template('website.html')
-  
-  @app.route('/predict', methods=['Post'])
-  def predict_placement():
+@app.route('/')
+def index():
+    return render_template('website.html')
+
+@app.route('/predict', methods=['POST'])
+def predict_placement():
+      #Reqeusting forms 
       age = str(request.form.get('Age'))
       sex = str(request.form.get('Sex'))
       diag = str(request.form.get('DiagnosisType'))
@@ -73,18 +74,10 @@ def create_app():
 
       return render_template('website.html', result=result)
 
+@app.route('/diagnosis-page.html')
+def diagnosis_page():
+    return render_template('next_page.html')
 
-  
-  @app.route('/diagnosis-page.html')
-  def diagnosis_page():
-        return render_template('next_page.html')
-  
-
-  if __name__ == '__main__':
-    app.run(debug=True)
-
-  return app
-
-create_app()
-
+if __name__ == '__main__':
+    app.run()  
 
