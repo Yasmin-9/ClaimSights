@@ -4,10 +4,8 @@ import json
 import pickle
 import numpy as np
 import pandas as pd
-
 app = Flask(__name__)
 Bootstrap(app)
-
 # Load model and data files during application startup
 try:
     with open('model.pkl', 'rb') as f:
@@ -46,13 +44,13 @@ def predict_placement():
     prediction = model.predict(X_pred_df)
     result = 'Approved' if prediction[0] == 'Paid' else 'Denied'
     return render_template('website.html', result=result)
-
 @app.route('/diagnosis-page.html')
 def diagnosis_page():
     return render_template('next_page.html')
-
 if __name__ == '__main__':
     app.run()
+
+
 
 
 

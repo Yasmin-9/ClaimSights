@@ -2,7 +2,7 @@
 ### Machine Learning Foresights into Health Insurance Claims
 
 ## Overview
-ClaimSight is a website specifically created to forecast the likelihood of acceptance or rejection of an insurance claim submitted by a user. The process involves users inputting their general information, including sex, age, and diagnosis code, through the selection of corresponding options. These parameters are then queried via Flask, which initiates a request and retrieves predictions from a machine learning model. The outcome, presented as a binary result, is displayed to the user through a popup indicating either 'COVERED' or 'REJECTED.' The  platform is hosted on AWS. 
+ClaimSight is a website specifically created to forecast the likelihood of acceptance or rejection of an insurance claim submitted by a user. The process involves users inputting their general information, including sex, age, and diagnosis code, through the selection of corresponding options. These parameters are then queried via Flask, which initiates a request and retrieves predictions from a machine learning model. The outcome, presented as a binary result, is displayed to the user through a popup indicating either 'COVERED' or 'DENIED.' The  platform is hosted on AWS. 
 
 ## Exploratory Data Analysis: 
 The dataset was provided by an insurance company with a confidentiality agreement, with the data spanning to over 250k rows. 
@@ -59,8 +59,14 @@ All scores for the 'Paid' are over 80%, implying the model predicted 80% of all 
 
 ### Front-end Development
 HTML, JavaScript, Bootstrap, and CSS were fundamental to create a cohesive and user-friendly interface. Utilizing built-in HTML functions and Bootstrap frameworks to implement features like buttons, dropdowns and tooltips to assist or aid a user's experience. To maintain a consistent layout across different screens, CSS was employed , organizing styling within classes, ID's and div elements in the HTML structure. This approach ensured a seamless user experience regardless of the user's device, minimizing the impact of varying screen sizes on the site's design.
+
+#### Flask & Front-End Connection
+The user interactions on ClaimSights was linked to the ML model with flask, using request form from flask to create forms that retrieves the users submitted data and runs query in our machine model to get the prediction result of the insurance claim status, as either ‘APPROVED’ or ‘DENIED’. The results are then stored and loaded inside a new dataframe and sent back to the site essentially which triggers a response by the site by producing one of two possible predictions, in the form of the button pop up.
+
  
 ## Challenges and Conclusion
 Several challenges were faced during the course of this project such as data inconsistency or maxed out computer efficiency leading to further complexities. With the data not being in an ideal state for ML, data cleaning required a rigorous amount of effort, trialing through the columns and features to select only the important features for ML followed by encoding and binning data for better consistency during the training process. The optimization of the model posed additional challenges, as the length of the dataset prolonged the training and prediction periods. Recognizing the need for strategic planning to minimize processing time, critical thinking played a crucial role in devising advanced optimization strategies. This proactive approach aimed to streamline the machine's ability to efficiently process the data, mitigating the impact of the dataset's extensive size on the overall project timeline.
 
 For future endeavours, having data from several insurance companies can enhance the credibility of the model, and allow the model to expand it's horizons towards greater target audiences, such as insurance companies themselves to run insurance claims to detect for fraudelant claims. 
+
+Contriubtors: Yasmin Bsata, Allan Mathews, Qudsia Ahmad, and Merve Celme
